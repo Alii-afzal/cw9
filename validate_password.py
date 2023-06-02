@@ -1,15 +1,13 @@
-def validate():
-    while True:
-        password = input("Enter a password: ")
-        if len(password) < 8:
-            print("Make sure your password is at lest 8 letters")
-        elif not password.isdigit():
-            print("Make sure your password has a number in it")
-        elif not password.isupper(): 
-            print("Make sure your password has a capital letter in it")
-        else:
-            print("Your password seems fine")
-            break
-        
+import re
 
-validate()
+def validation_password():
+    
+    while True:
+        password = input("Enter your password: ")
+        if re.findall(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$", password):
+            print("correct passwrod")
+            exit()
+        else : 
+            print("incoreect password!!!")
+        
+validation_password()
