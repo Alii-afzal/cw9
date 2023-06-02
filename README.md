@@ -1,2 +1,2 @@
 # cw9
-test
+maktab.gi
