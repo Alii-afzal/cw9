@@ -1,2 +1,2 @@
 # cw9
-maktab.gi
+maktab.git
